@@ -2,10 +2,13 @@
 
 @theme {
   --color-*: initial;
-  --color-black: #000000;
-  --color-white: #ffffff;
+  --color-black: #343434;
+  --color-dark-blue: #173060;
+  --color-dark-gold: #d8be71;
+  --color-gold: #e5d6a9;
   --color-link-blue: #0000ff;
   --color-transparent: transparent;
+  --color-white: #ffffff;
 
   --breakpoint-*: initial;
   --breakpoint-phone: 425px;
@@ -19,24 +22,25 @@ html {
 
 @utility text-paragraph {
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 @utility text-subheading {
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1;
 }
 
 @utility text-heading {
-  font-size: 2rem;
-  font-weight: 200;
-  line-height: 30px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
 }
 
 @layer components {
   * {
-    @apply text-black;
-    font-family: "Roboto", Arial, sans-serif;
+    @apply text-black leading-[1.25];
+    font-family: "DM Sans", Arial, sans-serif;
   }
 
   h1,

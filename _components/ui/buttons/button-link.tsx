@@ -1,6 +1,7 @@
 import { buttonStyles } from "@/_styles/button-styles";
 import { ButtonProps } from "@/_types/button-types";
 import Link from "next/link";
+import { ChevronRight } from "lucide-react";
 
 const ButtonLink = ({
   children,
@@ -9,18 +10,18 @@ const ButtonLink = ({
   href = "#",
   disabled,
   ariaLabel,
-  redButton = false,
   target = "_self",
 }: ButtonProps) => {
   return (
     <Link
       href={href}
       onClick={onClick}
-      className={buttonStyles(cssClasses, disabled, false, redButton)}
+      className={buttonStyles(cssClasses, disabled, false)}
       aria-label={ariaLabel}
       target={target}
     >
       {children}
+      <ChevronRight size={20} color="#173060" />
     </Link>
   );
 };

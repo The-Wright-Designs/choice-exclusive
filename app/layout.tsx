@@ -1,13 +1,20 @@
 import type { Metadata } from "next";
 
-import { Roboto } from "next/font/google";
+import { DM_Sans, Cormorant_Garamond } from "next/font/google";
 
-const robotoSansSerif = Roboto({
+const dmSansSerif = DM_Sans({
   subsets: ["latin"],
-  weight: ["200", "400", "700"],
+  weight: ["300", "400", "500", "700"],
+});
+
+const cormorantSerif = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["700"],
+  variable: "--font-cormorant",
 });
 
 import "@/_styles/globals.css";
+import HeaderComponent from "@/_components/navigation/header-component";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://exclusive.choicenet.co.za"),
@@ -55,7 +62,10 @@ export default function RootLayout({
   };
   return (
     <html lang="en" data-scroll-behavior="smooth">
-      <body className={`${robotoSansSerif.className} antialiased`}>
+      <body
+        className={`${dmSansSerif.className} ${cormorantSerif.variable} antialiased`}
+      >
+        <HeaderComponent />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

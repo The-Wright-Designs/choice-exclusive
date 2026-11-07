@@ -3,6 +3,7 @@
 import { useFormStatus } from "react-dom";
 import { ButtonProps } from "@/_types/button-types";
 import { buttonStyles } from "@/_styles/button-styles";
+import { ChevronRight } from "lucide-react";
 
 const ButtonType = ({
   children,
@@ -10,7 +11,6 @@ const ButtonType = ({
   cssClasses,
   type = "submit",
   disabled = false,
-  redButton = false,
   ariaLabel,
   title,
 }: ButtonProps) => {
@@ -21,7 +21,7 @@ const ButtonType = ({
       type={type}
       onClick={onClick}
       aria-label={ariaLabel}
-      className={buttonStyles(cssClasses, disabled, pending, redButton)}
+      className={buttonStyles(cssClasses, disabled, pending)}
       disabled={disabled || pending}
       title={title}
     >
@@ -30,7 +30,10 @@ const ButtonType = ({
           <div className="spinner"></div>
         </div>
       ) : (
-        <>{children}</>
+        <>
+          {children}
+          <ChevronRight size={20} color="#173060" />
+        </>
       )}
     </button>
   );

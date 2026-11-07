@@ -1,15 +1,27 @@
 [
   {
     "title": "Home",
-    "url": "/"
+    "url": "/#home"
   },
   {
-    "title": "About",
-    "url": "/#about"
+    "title": "Overview",
+    "url": "/#overview"
   },
   {
-    "title": "Services",
-    "url": "/#services"
+    "title": "Mountain Rose",
+    "url": "/#mountain-rose"
+  },
+  {
+    "title": "Viticulture",
+    "url": "/#viticulture"
+  },
+  {
+    "title": "Conservation",
+    "url": "/#conservation"
+  },
+  {
+    "title": "Maps",
+    "url": "/#maps"
   },
   {
     "title": "Contact",

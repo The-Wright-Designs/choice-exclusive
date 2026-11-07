@@ -6,10 +6,9 @@ import Link from "next/link";
 import classNames from "classnames";
 
 import navData from "@/_data/nav-data.json";
-import { Menu, X } from "lucide-react";
+import { Equal, X } from "lucide-react";
 
 const COMPANY_NAME = "Choice Property Group";
-const COMPANY_LOCATION = "Location";
 
 interface MobileHeaderProps {
   cssClasses?: string;
@@ -32,43 +31,39 @@ export function HeaderMobile({ cssClasses }: MobileHeaderProps) {
 
   return (
     <div className={classNames(cssClasses)}>
-      <div className="flex w-full items-center gap-10 justify-between">
-        <Link
-          href="/"
-          className="flex flex-wrap gap-y-2 gap-x-3 items-center"
-        >
-          <Image src="" alt="" width={66} height={57} />
-          <h1 className="text-[18px] min-[400px]:text-[28px] font-semibold flex flex-col">
-            {COMPANY_NAME}
-            <span className="text-[12px] font-extralight">
-              {COMPANY_LOCATION}
-            </span>
-          </h1>
+      <div className="flex w-full items-center justify-between">
+        <Link href="/">
+          <Image
+            src="/logo/choice-properties-logo.png"
+            alt={COMPANY_NAME}
+            width={108}
+            height={40}
+          />
         </Link>
         <button
           onClick={() => setIsOpen(true)}
           className="ease-in-out duration-300 -m-2 p-2"
           aria-label="Open menu"
         >
-          <Menu size={28} color="#202020" />
+          <Equal size={32} color="#173060" />
         </button>
       </div>
 
       <div
         className={classNames(
-          "fixed inset-0 z-50 transform bg-black/98 transition-transform duration-300 ease-in-out",
+          "fixed inset-0 z-50 transform bg-dark-blue/98 transition-transform duration-300 ease-in-out",
           {
             "translate-x-full": !isOpen,
           },
         )}
       >
-        <div className="flex w-full py-8.5 items-center px-7 justify-end">
+        <div className="flex w-full py-6 items-center px-7 justify-end">
           <button
             onClick={() => setIsOpen(false)}
             aria-label="Close menu"
-            className="p-2 -m-2"
+            className="p-2 -m-2 translate-x-2"
           >
-            <X size={28} color="#FFFFFF" />
+            <X size={32} color="#FFFFFF" />
           </button>
         </div>
         <nav className="px-5">
@@ -79,7 +74,7 @@ export function HeaderMobile({ cssClasses }: MobileHeaderProps) {
                   <Link
                     href={url}
                     onClick={() => setIsOpen(false)}
-                    className="text-paragraph text-white font-extralight p-2 -m-2"
+                    className="text-paragraph text-white p-2 -m-2"
                   >
                     {title}
                   </Link>
