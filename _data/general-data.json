@@ -39,6 +39,77 @@
           { "label": "Longitude", "value": "19.2367°E" }
         ]
       }
+    },
+    "overviewSection": {
+      "heading": "Overview",
+      "subheading": "Hemel-en-Aarde farm of exceptional scale, location and quality",
+      "accordion": [
+        {
+          "title": "Property",
+          "paragraphs": [
+            "Remainder of the Farm Hemel-en-Aarde No. 585, Hermanus, Overstrand Municipality, Western Cape. Known as Mountain Rose."
+          ]
+        },
+        {
+          "title": "Water rights",
+          "paragraphs": [
+            "78,852m³ per annum (based on 40,000m³ general authorisation plus 38,852m³ registered existing lawful use). Two perennial stream systems."
+          ]
+        },
+        {
+          "title": "Extent Registered",
+          "paragraphs": ["155.9517 Ha"]
+        },
+        {
+          "title": "Price",
+          "paragraphs": [
+            "ZAR 60 million",
+            "USD 3.6 million*",
+            "EUR 3.2 million*",
+            "*Subject to exchange rates"
+          ]
+        },
+        {
+          "title": "Arable land 40 Ha",
+          "paragraphs": [
+            "40 Ha predominantly south and southwest facing slopes. Stoney, high clay-content Bokkeveld Shale-derived soil as well as lighter structured Table Mountain Sandstone-derived soil. Not used for agriculture for 50 years. Current environmental authorisation for up to 20 Ha of vineyard cultivation. Further authorisation by application."
+          ]
+        },
+        {
+          "title": "Elevation and slope",
+          "paragraphs": [
+            "Arable slopes typically 3 to 6 degrees and rarely exceed 9 degrees. Elevation rises from 80m to 580m above sea level."
+          ]
+        },
+        {
+          "title": "Conservation land 115Ha",
+          "paragraphs": [
+            "High and very high value conservation land, with a high density of plant species. Numerous recorded leopard sightings (with the Landmark Foundation). Long common boundary with Fernkloof Nature Reserve. Not bound by any environmental stewardship or private nature reserve agreement: owner remains free to agree to these if advantageous. Valuable conservation offsets if required."
+          ]
+        },
+        {
+          "title": "Infrastructure",
+          "paragraphs": [
+            "Adequate network of farm roads and 4x4 access tracks. Mountain footpath network (accessing Fernkloof Nature Reserve). 2,000m³ earth dam. 3 or 4 simple cottages plus various small outbuildings. No significant development."
+          ]
+        },
+        {
+          "title": "Location",
+          "paragraphs": [
+            "20 minutes from Hermanus. Prime Hemel-en-Aarde Valley location. Direct ocean views."
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "/images/overview/Mountain-Rose__002.jpg",
+          "alt": "Sunset over the mountains and valley"
+        },
+        {
+          "src": "/images/overview/Mountain-Rose__014.jpg",
+          "alt": "Farm road leading through the fynbos"
+        }
+      ]
     }
   }
 }
