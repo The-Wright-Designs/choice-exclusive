@@ -147,6 +147,25 @@
           "alt": "Pink watsonias flowering in the fynbos"
         }
       ]
+    },
+    "viticultureSection": {
+      "heading": "Viticulture Opportunities",
+      "subheading": "The Hemel-en-Aarde appellations, an exceptional wine region",
+      "image": {
+        "src": "/images/viticulture/Mountain-Rose__003.jpg",
+        "alt": "Mountains rising above the fynbos and arable slopes"
+      },
+      "highlight": "40 hectares of arable land, unused for 50 years with no trace of chemical herbicides, pesticides or fertilisers. Alive with possibility.",
+      "bullets": [
+        "The farm’s 40 hectares of arable land have not been used for agriculture for 50 years, and never for viticulture. They have reverted to indigenous vegetation and are alive with possibility.",
+        "If developed, this land would make up 9% of total vineyard land in the three Hemel-en-Aarde appellations, placing the property firmly in the big league.",
+        "In terms of soil profile, the farm’s arable soils are typical of the area (the southern side of the Onrus River), comprising mostly stoney, high clay-content Bokkeveld Shale-derived soil. However, almost uniquely, the arable soils are situated predominantly on the favoured south and southwest facing slopes."
+      ],
+      "quote": "“Scale, location, quality: it does not get better than this.”",
+      "buttons": [
+        { "label": "Video", "href": "#" },
+        { "label": "Contact", "href": "/contact" }
+      ]
     }
   }
 }
