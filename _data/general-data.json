@@ -1,3 +1,44 @@
 {
-  "heroSlider": ["hero-slide-1.jpg", "hero-slide-2.jpg", "hero-slide-3.jpg"]
+  "homePage": {
+    "infoSection": {
+      "images": [
+        {
+          "src": "/images/info/Mountain-Rose__023.jpg",
+          "alt": "Pond with vineyards and the ocean in the distance"
+        },
+        {
+          "src": "/images/info/Mountain-Rose__009.jpg",
+          "alt": "Horse overlooking the fynbos and valley"
+        },
+        {
+          "src": "/images/info/Mountain-Rose__021.JPG",
+          "alt": "Open wooden door of a yellow farmhouse"
+        }
+      ],
+      "landCards": [
+        { "icon": "ruler", "title": "Land size 155 Ha" },
+        { "icon": "droplets", "title": "Water Rights" },
+        { "icon": "sprout", "title": "Arable land & Conservation" }
+      ],
+      "airport": {
+        "title": "Nearest Airport",
+        "name": "Cape Town International",
+        "stats": [
+          { "value": "110 km / 68 miles", "label": "from Cape Town" },
+          { "value": "1 hr 15 min", "label": "Drive time" }
+        ]
+      },
+      "location": {
+        "title": "Hermanus, South Africa",
+        "description": "Seaside town set within the Overstrand Municipality, Western Cape"
+      },
+      "coordinates": {
+        "title": "Coordinates",
+        "stats": [
+          { "label": "Latitude", "value": "-34.3836°S" },
+          { "label": "Longitude", "value": "19.2367°E" }
+        ]
+      }
+    }
+  }
 }

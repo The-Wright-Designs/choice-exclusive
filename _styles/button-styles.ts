@@ -10,7 +10,8 @@ export const buttonStyles = (
     cssClasses,
     {
       "opacity-50 cursor-not-allowed": pending || disabled,
-      "desktop:hover:cursor-pointer desktop:hover:bg-dark-gold":
-        !(disabled || pending),
+      "desktop:hover:cursor-pointer desktop:hover:bg-dark-gold": !(
+        disabled || pending
+      ),
     },
   );
