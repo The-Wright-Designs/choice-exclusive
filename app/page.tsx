@@ -2,6 +2,7 @@ import PageWrapper from "@/_lib/utils/page-wrapper";
 import HeroComponent from "@/_components/home-page/hero/hero-component";
 import InfoComponent from "@/_components/home-page/info/info-component";
 import OverviewComponent from "@/_components/home-page/overview/overview-component";
+import MountainRoseComponent from "@/_components/home-page/mountain-rose/mountain-rose-component";
 import MobileSeparator from "@/_components/ui/mobile-separator";
 
 export default function HomePage() {
@@ -11,6 +12,7 @@ export default function HomePage() {
       <InfoComponent />
       <MobileSeparator />
       <OverviewComponent />
+      <MountainRoseComponent />
       <PageWrapper>
         <h1>Heading</h1>
         <h3>Subheading</h3>

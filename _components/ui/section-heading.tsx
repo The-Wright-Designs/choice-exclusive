@@ -4,17 +4,21 @@ interface SectionHeadingProps {
   heading: string;
   subheading: string;
   cssClasses?: string;
+  headingCssClasses?: string;
+  subheadingCssClasses?: string;
 }
 
 const SectionHeading = ({
   heading,
   subheading,
   cssClasses,
+  headingCssClasses = "text-dark-gold",
+  subheadingCssClasses = "text-dark-blue",
 }: SectionHeadingProps) => {
   return (
     <div className={classNames("flex flex-col gap-5", cssClasses)}>
-      <h2 className="text-dark-gold">{heading}</h2>
-      <h3 className="text-dark-blue">{subheading}</h3>
+      <h2 className={headingCssClasses}>{heading}</h2>
+      <h3 className={subheadingCssClasses}>{subheading}</h3>
     </div>
   );
 };

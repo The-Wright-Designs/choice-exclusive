@@ -110,6 +110,43 @@
           "alt": "Farm road leading through the fynbos"
         }
       ]
+    },
+    "mountainRoseSection": {
+      "heading": "Mountain Rose",
+      "subheading": "An extraordinary investment opportunity",
+      "topImages": [
+        {
+          "src": "/images/mountain-rose/Mountain-Rose__001.jpg",
+          "alt": "Aerial view of the farm, vineyards and the valley"
+        },
+        {
+          "src": "/images/mountain-rose/Mountain-Rose__005.JPG",
+          "alt": "Two people walking along a farm road towards the mountain"
+        }
+      ],
+      "quote": "Hemel-en-Aarde, translated into English, is “Heaven and Earth”",
+      "bullets": [
+        "This exceptional property is located in the prestigious Hemel-en-Aarde Valley, the first of the three Hemel-en-Aarde appellations, which make up one of South Africa’s premier wine-producing and wine-tourism regions.",
+        "The farm extends from its base at the valley floor to its upper reaches along the Fernkloof Nature Reserve boundary, an ascent of 500m over a distance of 3.5km.",
+        "Its arable southwestern portion lies midway between two of the region’s legendary wineries, Hamilton Russell Vineyards and Bouchard Finlayson, sharing boundaries with both.",
+        "Its mountain land, which makes up its northeastern portion, includes the highest privately-owned land in the Hemel-en-Aarde Valley as well as two perennial stream systems. It embraces views from Cape Hangklip in the west to Danger Point Lighthouse in the south. Its southern boundary lies a mere 3km from the South Atlantic Ocean.",
+        "Mountain Rose now comes to the market for the first time in nearly half a century.",
+        "This sale presents an extraordinary opportunity."
+      ],
+      "buttons": [
+        { "label": "Video", "href": "#" },
+        { "label": "Contact", "href": "/contact" }
+      ],
+      "bottomImages": [
+        {
+          "src": "/images/mountain-rose/Mountain-Rose__006.JPG",
+          "alt": "Grassy path between pine trees and fynbos towards the ocean"
+        },
+        {
+          "src": "/images/mountain-rose/Mountain-Rose__010.JPG",
+          "alt": "Pink watsonias flowering in the fynbos"
+        }
+      ]
     }
   }
 }
