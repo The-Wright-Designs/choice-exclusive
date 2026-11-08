@@ -63,7 +63,7 @@ export default function MountainRoseComponent() {
         />
         <div className="contents desktop:flex desktop:flex-col desktop:gap-7 desktop:w-[451px] desktop:shrink-0">
           <h2 className="hidden desktop:block text-gold">{heading}</h2>
-          <ul className="order-3 flex flex-col gap-7">
+          <ul className="order-3 flex flex-col gap-5">
             {bullets.map((bullet) => (
               <li key={bullet} className="flex gap-3">
                 <div className="size-1.5 mt-1.5 shrink-0 rounded-full bg-white" />

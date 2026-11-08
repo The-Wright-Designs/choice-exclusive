@@ -166,6 +166,25 @@
         { "label": "Video", "href": "#" },
         { "label": "Contact", "href": "/contact" }
       ]
+    },
+    "conservationSection": {
+      "heading": "Conservation 115 Hectares",
+      "subheading": "Space and privacy that is increasingly rare",
+      "bullets": [
+        "Mountain Rose is a founder member of the Hemel-en-Aarde Conservancy. It has followed an extensive conservation management plan for many years under the guidance of Sean Privett, a well-known botanical specialist.",
+        "The Hemel-en-Aarde region counts more plant species per square kilometre than almost anywhere else on earth. Mountain Rose exemplifies this biodiversity.",
+        "The farm is not bound by any environmental stewardship or private nature reserve agreement and remains free to enter into such an agreement if deemed appropriate.",
+        "The farm’s mountain land and stream systems confer significant capacity for terrestrial and wetland conservation offsets, if required."
+      ],
+      "paragraph": "Mountain Rose is the sleeping giant of the Hemel-en-Aarde Valley, serving as an extended green belt between scenic wine estates and the rugged mountain ranges behind the historic seaside town of Hermanus. Fynbos-covered uplands and a significant wetland habitat along the farm’s southern boundary provide a sanctuary for dozens of bird species, numerous small game species, and the secretive Cape Mountain Leopard. Ever-present, over all of this, are the cooling breezes off the South Atlantic Ocean.",
+      "quote": "“The farm includes the highest privately-owned land in the Hemel-en-Aarde Valley. It ascends by 500m over a distance of 3.5km. This is land where the Cape Mountain Leopard still roams and where you can hear the call of the African fish eagle.”",
+      "graphic": {
+        "src": "/images/conservation/leopard-graphic.png"
+      },
+      "image": {
+        "src": "/images/conservation/Mountain-Rose__024.jpg",
+        "alt": "Waterfall running down the rocky mountainside"
+      }
     }
   }
 }

@@ -4,6 +4,7 @@ import InfoComponent from "@/_components/home-page/info/info-component";
 import OverviewComponent from "@/_components/home-page/overview/overview-component";
 import MountainRoseComponent from "@/_components/home-page/mountain-rose/mountain-rose-component";
 import ViticultureComponent from "@/_components/home-page/viticulture/viticulture-component";
+import ConservationComponent from "@/_components/home-page/conservation/conservation-component";
 import MobileSeparator from "@/_components/ui/mobile-separator";
 
 export default function HomePage() {
@@ -15,16 +16,7 @@ export default function HomePage() {
       <OverviewComponent />
       <MountainRoseComponent />
       <ViticultureComponent />
-      <PageWrapper>
-        <h1>Heading</h1>
-        <h3>Subheading</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
-      </PageWrapper>
+      <ConservationComponent />
     </div>
   );
 }

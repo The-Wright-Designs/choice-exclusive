@@ -19,7 +19,7 @@ export default function ViticultureComponent() {
           cssClasses="order-first"
         />
         <h3 className="text-dark-blue font-bold">{highlight}</h3>
-        <ul className="flex flex-col gap-7">
+        <ul className="flex flex-col gap-5">
           {bullets.map((bullet) => (
             <li key={bullet} className="flex gap-3">
               <div className="size-1.5 mt-1.5 shrink-0 rounded-full bg-dark-blue" />

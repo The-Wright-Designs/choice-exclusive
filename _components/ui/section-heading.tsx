@@ -16,7 +16,7 @@ const SectionHeading = ({
   subheadingCssClasses = "text-dark-blue",
 }: SectionHeadingProps) => {
   return (
-    <div className={classNames("flex flex-col gap-5", cssClasses)}>
+    <div className={classNames("flex flex-col gap-2", cssClasses)}>
       <h2 className={headingCssClasses}>{heading}</h2>
       <h3 className={subheadingCssClasses}>{subheading}</h3>
     </div>
