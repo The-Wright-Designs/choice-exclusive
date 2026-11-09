@@ -6,6 +6,7 @@ import MountainRoseComponent from "@/_components/home-page/mountain-rose/mountai
 import ViticultureComponent from "@/_components/home-page/viticulture/viticulture-component";
 import ConservationComponent from "@/_components/home-page/conservation/conservation-component";
 import MapsComponent from "@/_components/home-page/maps/maps-component";
+import ParallaxComponent from "@/_components/home-page/parallax/parallax-component";
 import MobileSeparator from "@/_components/ui/mobile-separator";
 
 export default function HomePage() {
@@ -19,6 +20,7 @@ export default function HomePage() {
       <ViticultureComponent />
       <ConservationComponent />
       <MapsComponent />
+      <ParallaxComponent />
     </div>
   );
 }

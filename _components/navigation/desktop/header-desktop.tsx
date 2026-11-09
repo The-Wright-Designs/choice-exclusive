@@ -3,8 +3,6 @@ import Image from "next/image";
 import navData from "@/_data/nav-data.json";
 import classNames from "classnames";
 
-const COMPANY_NAME = "Choice Property Group";
-
 interface DesktopHeaderProps {
   cssClasses?: string;
 }
@@ -12,10 +10,14 @@ interface DesktopHeaderProps {
 const HeaderDesktop = ({ cssClasses }: DesktopHeaderProps) => {
   return (
     <div className={classNames("items-center justify-between", cssClasses)}>
-      <Link href="/">
+      <Link
+        href="http://choicenet.co.za/"
+        target="blank"
+        className="desktop:hover:opacity-80 ease-in-out duration-300"
+      >
         <Image
           src="/logo/choice-properties-logo.png"
-          alt={COMPANY_NAME}
+          alt="Choice Property Group"
           width={129}
           height={48}
         />
@@ -24,7 +26,11 @@ const HeaderDesktop = ({ cssClasses }: DesktopHeaderProps) => {
         {navData.map((item) => (
           <Link
             key={item.title}
-            className="text-[14px] font-light text-black desktop:hover:text-dark-blue"
+            className={classNames(
+              "relative text-[14px] font-light text-black transition-colors desktop:hover:text-dark-blue",
+              "after:absolute after:left-0 after:-bottom-1 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-gold after:transition-transform after:duration-300 after:content-['']",
+              "desktop:hover:after:scale-x-100",
+            )}
             href={item.url}
           >
             {item.title}

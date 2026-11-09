@@ -32,7 +32,11 @@ const ButtonType = ({
       ) : (
         <>
           {children}
-          <ChevronRight size={20} color="#173060" />
+          <ChevronRight
+            size={20}
+            color="#173060"
+            className="ease-in-out duration-300 desktop:group-hover:translate-x-[5px]"
+          />
         </>
       )}
     </button>

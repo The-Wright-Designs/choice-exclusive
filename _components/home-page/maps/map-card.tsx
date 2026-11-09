@@ -54,9 +54,13 @@ export default function MapCard({
         type="button"
         aria-label={`Enlarge ${image.alt}`}
         onClick={() => setIsOpen(true)}
-        className="absolute bottom-3 right-3 flex size-10 items-center justify-center rounded-full bg-white/85 desktop:hover:cursor-pointer"
+        className="group absolute bottom-3 right-3 flex size-10 items-center justify-center rounded-full bg-white/85 desktop:hover:cursor-pointer desktop:hover:bg-gold ease-in-out duration-300"
       >
-        <Maximize2 size={18} color="#173060" />
+        <Maximize2
+          size={18}
+          color="#173060"
+          className="ease-in-out duration-300 desktop:group-hover:scale-110"
+        />
       </button>
       {isOpen && (
         <div

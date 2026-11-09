@@ -13,7 +13,7 @@ export default function ConservationComponent() {
 
   return (
     <div className="relative overflow-hidden bg-dark-blue">
-      <div className="pointer-events-none absolute inset-0 mx-auto hidden max-w-[1280px] desktop:block">
+      <div className="pointer-events-none absolute inset-0 mx-auto hidden max-w-[1280px] tablet:block">
         <div className="absolute left-[-255px] top-[-460px] h-[1536px] w-[1500px]">
           <Image
             src={graphic.src}
@@ -25,22 +25,23 @@ export default function ConservationComponent() {
           />
         </div>
       </div>
-      <PageWrapper cssClasses="relative flex flex-col gap-10 py-15 desktop:flex-row desktop:gap-7">
-        <div className="flex flex-col gap-10 desktop:w-[869px] desktop:shrink-0">
+      <PageWrapper cssClasses="relative flex flex-col gap-10 py-15 tablet:grid tablet:grid-cols-[minmax(0,1.5fr)_minmax(0,1fr)] tablet:gap-x-7 tablet:gap-y-10 desktop:grid-cols-[869px_minmax(0,1fr)]">
+        <div className="flex flex-col gap-10 tablet:contents desktop:flex">
           <SectionHeading
             heading={heading}
             subheading={subheading}
+            cssClasses="tablet:col-span-2 desktop:col-span-1"
             headingCssClasses="text-gold"
             subheadingCssClasses="text-white"
           />
-          <div className="relative flex flex-col gap-7 overflow-hidden rounded-[6px] bg-gold px-7 py-10 desktop:py-7">
+          <div className="relative flex flex-col gap-7 overflow-hidden rounded-[6px] bg-gold px-7 py-10 tablet:py-7">
             <Image
               src={graphic.src}
               alt=""
               width={1500}
-              height={1536}
+              height={806}
               sizes="(max-width: 1280px) 100vw, 1224px"
-              className="pointer-events-none absolute left-[-67.15%] top-[49.14%] h-[42.36%] w-[219.76%] max-w-none object-cover opacity-10 desktop:hidden"
+              className="pointer-events-none absolute bottom-[8.5%] left-[-67.15%] h-auto w-[219.76%] max-w-none opacity-10 min-[500px]:bottom-[-25%] min-[700px]:bottom-[-40%] tablet:hidden"
             />
             <ul className="relative flex flex-col gap-5">
               {bullets.map((bullet) => (
@@ -52,9 +53,11 @@ export default function ConservationComponent() {
             </ul>
             <p className="relative text-dark-blue">{paragraph}</p>
           </div>
-          <p className="text-[22px] font-normal text-white">{quote}</p>
+          <p className="text-[22px] font-normal text-white tablet:col-span-2 desktop:col-span-1">
+            {quote}
+          </p>
         </div>
-        <div className="flex flex-col gap-5 desktop:hidden">
+        <div className="flex flex-col gap-5 tablet:hidden">
           {imageOffsets.map((offset, index) => (
             <div
               key={offset}
@@ -74,7 +77,7 @@ export default function ConservationComponent() {
             </div>
           ))}
         </div>
-        <div className="relative hidden flex-1 min-w-0 rounded-[6px] overflow-hidden desktop:block">
+        <div className="relative hidden rounded-[6px] overflow-hidden tablet:col-start-2 tablet:row-start-2 tablet:block desktop:row-start-1">
           <Image
             src={image.src}
             alt={image.alt}

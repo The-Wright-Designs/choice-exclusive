@@ -6,7 +6,7 @@ export const buttonStyles = (
   pending?: boolean,
 ) =>
   classNames(
-    "flex items-center justify-center gap-2.5 min-w-[160px] px-5 py-3 rounded-[6px] bg-gold text-dark-blue text-[16px] font-bold text-center shadow-[0_4px_4px_-4px_rgba(12,12,13,0.05),0_16px_32px_-4px_rgba(12,12,13,0.1)] ease-in-out duration-300",
+    "group flex items-center justify-center gap-2.5 min-w-[160px] px-5 py-3 rounded-[6px] bg-gold text-dark-blue text-[16px] font-bold text-center shadow-[0_4px_4px_-4px_rgba(12,12,13,0.05),0_16px_32px_-4px_rgba(12,12,13,0.1)] ease-in-out duration-300",
     cssClasses,
     {
       "opacity-50 cursor-not-allowed": pending || disabled,
