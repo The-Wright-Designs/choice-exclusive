@@ -5,6 +5,7 @@ import OverviewComponent from "@/_components/home-page/overview/overview-compone
 import MountainRoseComponent from "@/_components/home-page/mountain-rose/mountain-rose-component";
 import ViticultureComponent from "@/_components/home-page/viticulture/viticulture-component";
 import ConservationComponent from "@/_components/home-page/conservation/conservation-component";
+import MapsComponent from "@/_components/home-page/maps/maps-component";
 import MobileSeparator from "@/_components/ui/mobile-separator";
 
 export default function HomePage() {
@@ -17,6 +18,7 @@ export default function HomePage() {
       <MountainRoseComponent />
       <ViticultureComponent />
       <ConservationComponent />
+      <MapsComponent />
     </div>
   );
 }

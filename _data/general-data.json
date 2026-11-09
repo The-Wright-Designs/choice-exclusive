@@ -185,6 +185,26 @@
         "src": "/images/conservation/Mountain-Rose__024.jpg",
         "alt": "Waterfall running down the rocky mountainside"
       }
+    },
+    "mapsSection": {
+      "heading": "Maps",
+      "paragraph": "Set within the sought-after Hemel-en-Aarde Valley near Hermanus, this is a landscape defined by extraordinary natural beauty and a rare sense of place. The Valley lies between rugged mountain ranges and the cool waters of Walker Bay, where indigenous fynbos, rolling vineyards and expansive skies create an environment of remarkable tranquillity.",
+      "maps": [
+        {
+          "image": {
+            "src": "/maps/Mountain-Rose__016.jpg",
+            "alt": "Aerial map showing the boundary of Farm 585 RE"
+          },
+          "pdf": "/maps/Plan-of-Farm-585-RE-(Remainder-of-the-Farm-Hemel-en-Aarde)-2026.10.27.pdf"
+        },
+        {
+          "image": {
+            "src": "/maps/Mountain-Rose__017.jpg",
+            "alt": "Aerial map showing the locality of Farm 585 RE"
+          },
+          "pdf": "/maps/Plan-of-locality-of-Farm-585-RE-(Remainder-of-the-Farm-Hemel-en-Aarde)-2026.10.27.pdf"
+        }
+      ]
     }
   }
 }
