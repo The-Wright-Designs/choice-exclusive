@@ -8,6 +8,7 @@ import ConservationComponent from "@/_components/home-page/conservation/conserva
 import MapsComponent from "@/_components/home-page/maps/maps-component";
 import ParallaxComponent from "@/_components/home-page/parallax/parallax-component";
 import MobileSeparator from "@/_components/ui/mobile-separator";
+import ContactComponent from "@/_components/home-page/contact/contact-component";
 
 export default function HomePage() {
   return (
@@ -21,6 +22,7 @@ export default function HomePage() {
       <ConservationComponent />
       <MapsComponent />
       <ParallaxComponent />
+      <ContactComponent />
     </div>
   );
 }
