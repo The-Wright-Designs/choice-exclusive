@@ -22,7 +22,10 @@ export default async function MapsComponent() {
   );
 
   return (
-    <PageWrapper cssClasses="flex flex-col gap-7 py-15">
+    <PageWrapper
+      id="maps"
+      cssClasses="flex flex-col gap-7 py-15 scroll-mt-[81px] min-[1000px]:scroll-mt-[93px]"
+    >
       <h2 className="tablet:text-center">{heading}</h2>
       <p className="text-dark-blue tablet:order-3 tablet:text-justify">
         {paragraph}

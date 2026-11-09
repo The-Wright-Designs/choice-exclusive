@@ -52,7 +52,10 @@ export default function MountainRoseComponent() {
   } = generalData.homePage.mountainRoseSection;
 
   return (
-    <div className="bg-dark-blue">
+    <div
+      id="mountain-rose"
+      className="bg-dark-blue scroll-mt-[81px] min-[1000px]:scroll-mt-[93px]"
+    >
       <PageWrapper cssClasses="flex flex-col gap-7 py-15 desktop:flex-row desktop:items-stretch desktop:gap-10">
         <SectionHeading
           heading={heading}

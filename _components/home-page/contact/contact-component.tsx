@@ -21,7 +21,10 @@ const agents = [
 
 export default function ContactComponent() {
   return (
-    <div className="bg-dark-blue">
+    <div
+      id="contact"
+      className="bg-dark-blue scroll-mt-[81px] min-[1000px]:scroll-mt-[93px]"
+    >
       <PageWrapper cssClasses="flex flex-col gap-10 py-15">
         <div className="flex flex-col gap-7">
           <h2 className="text-gold">Contact</h2>

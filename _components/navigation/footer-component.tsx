@@ -3,21 +3,39 @@ import Image from "next/image";
 import navData from "@/_data/nav-data.json";
 
 const COMPANY_NAME = "Choice Property Group";
-const COMPANY_LOCATION = "Location";
 
-const FooterComponent = () => {
+const FooterComponent = async () => {
+  "use cache";
+
   return (
-    <footer className="bg-[BACKGROUND] w-full mt-15">
-      <div className="px-7 pt-15 pb-7 flex flex-col gap-5 tablet:max-w-[1280px] tablet:mx-auto tablet:px-15 tablet:pb-5">
-        <div className="flex flex-col gap-10 items-center tablet:flex-row tablet:justify-between tablet:items-start tablet:gap-0">
-          <nav className="hidden tablet:block">
-            <ul className="grid">
+    <footer className="bg-white w-full">
+      <div className="px-7 pt-15 pb-10 flex flex-col gap-7 desktop:max-w-[1280px] desktop:mx-auto desktop:pt-10 desktop:pb-5 min-[1336px]:px-0">
+        <div className="flex flex-col gap-7 items-center desktop:flex-row desktop:justify-between desktop:items-start desktop:gap-0">
+          <div className="flex flex-col gap-3 items-center">
+            <Link
+              href="https://www.choicenet.co.za"
+              target="_blank"
+              className="desktop:hover:opacity-90 ease-in-out duration-300"
+            >
+              <Image
+                src="/logo/choice-properties-logo.png"
+                alt={COMPANY_NAME}
+                width={156}
+                height={58}
+              />
+            </Link>
+            <p className="hidden desktop:block text-[10px] font-extralight text-center">
+              Registered with the PPRA
+            </p>
+          </div>
+          <nav className="hidden desktop:block">
+            <ul className="text-center">
               {navData.map(({ title, url }, id) => {
                 return (
                   <li key={id}>
                     <Link
                       href={url}
-                      className="text-[14px] font-light desktop:hover:text-[PRIMARY]"
+                      className="text-[12px] font-extralight text-black desktop:hover:opacity-80"
                     >
                       {title}
                     </Link>
@@ -26,46 +44,32 @@ const FooterComponent = () => {
               })}
             </ul>
           </nav>
-          <div className="flex flex-col gap-5 items-center tablet:items-end">
+          <p className="text-[14px] font-extralight text-center flex flex-col desktop:text-right">
+            Designed &amp; developed by
             <Link
-              href="/"
-              className="flex flex-col gap-3 items-center w-[250px] tablet:w-auto tablet:flex-row tablet:items-start"
+              href="https://thewrightdesigns.co.za"
+              className="text-dark-blue desktop:hover:opacity-80"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <Image
-                src=""
-                alt=""
-                width={118}
-                height={101}
-                className="tablet:h-[34px] tablet:w-auto tablet:-translate-y-1.5"
-              />
-              <h1 className="text-[40px] font-semibold flex flex-col items-center gap-2 text-center tablet:text-[24px] tablet:text-right tablet:items-end tablet:gap-1">
-                {COMPANY_NAME}
-                <span className="text-[16px] font-extralight tablet:text-[14px]">
-                  {COMPANY_LOCATION}
-                </span>
-              </h1>
+              The Wright Designs
             </Link>
-            <hr className="border-black/25 w-[125px] tablet:hidden" />
-            <p className="text-paragraph text-center flex flex-col gap-1 tablet:text-right tablet:text-[14px]">
-              Designed &amp; developed by
-              <Link
-                href="https://thewrightdesigns.co.za"
-                className="hover:opacity-80"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                The Wright Designs
-              </Link>
-            </p>
-          </div>
+          </p>
         </div>
-        <p className="text-paragraph text-center w-full flex flex-col gap-1 items-center tablet:flex-row tablet:text-[14px] tablet:justify-center">
-          © {new Date().getFullYear()} {COMPANY_NAME}
-          <span className="hidden tablet:block">|</span>
-          <Link href="/" className="hover:opacity-80">
-            exclusive.choicenet.co.za
-          </Link>
-        </p>
+        <div className="flex flex-col items-center gap-3 w-full">
+          <p className="text-[14px] font-extralight text-center w-full flex flex-col items-center desktop:gap-1 desktop:flex-row desktop:justify-center">
+            © {COMPANY_NAME} {new Date().getFullYear()}
+            <span className="hidden desktop:block text-[14px] font-extralight">
+              |
+            </span>
+            <Link href="/" className="text-dark-blue desktop:hover:opacity-80">
+              exclusive.choicenet.co.za
+            </Link>
+          </p>
+          <p className="text-[10px] font-extralight text-center desktop:hidden">
+            Registered with the PPRA
+          </p>
+        </div>
       </div>
     </footer>
   );

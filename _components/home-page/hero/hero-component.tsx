@@ -5,7 +5,10 @@ import HeroBox from "./hero-box";
 
 export default function HeroComponent() {
   return (
-    <div className="max-w-[1280px] mx-auto">
+    <div
+      id="home"
+      className="max-w-[1280px] mx-auto scroll-mt-[81px] min-[1000px]:scroll-mt-[93px]"
+    >
       <div className="relative flex flex-col h-[605px] tablet:h-[700px] min-[1100px]:h-[605px] min-[1100px]:items-center min-[1100px]:justify-center min-[1100px]:gap-7 min-[1100px]:px-7">
         <Image
           src="/images/hero/Mountain-Rose__015.JPG"

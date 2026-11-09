@@ -15,6 +15,7 @@ const cormorantSerif = Cormorant_Garamond({
 
 import "@/_styles/globals.css";
 import HeaderComponent from "@/_components/navigation/header-component";
+import FooterComponent from "@/_components/navigation/footer-component";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://exclusive.choicenet.co.za"),
@@ -71,6 +72,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         {children}
+        <FooterComponent />
       </body>
     </html>
   );

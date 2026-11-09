@@ -10,7 +10,10 @@ export default function OverviewComponent() {
     generalData.homePage.overviewSection;
 
   return (
-    <PageWrapper cssClasses="flex flex-col gap-10 py-15 desktop:flex-row desktop:gap-7">
+    <PageWrapper
+      id="overview"
+      cssClasses="flex flex-col gap-10 py-15 scroll-mt-[81px] min-[1000px]:scroll-mt-[93px] desktop:flex-row desktop:gap-7"
+    >
       <div className="flex flex-col gap-10 desktop:flex-1 desktop:min-w-0">
         <SectionHeading heading={heading} subheading={subheading} />
         <Accordion

@@ -28,7 +28,7 @@ const HeaderDesktop = ({ cssClasses }: DesktopHeaderProps) => {
             key={item.title}
             className={classNames(
               "relative text-[14px] font-light text-black transition-colors desktop:hover:text-dark-blue",
-              "after:absolute after:left-0 after:-bottom-1 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-gold after:transition-transform after:duration-300 after:content-['']",
+              "after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:origin-center after:scale-x-0 after:bg-gold after:transition-transform after:duration-300 after:content-['']",
               "desktop:hover:after:scale-x-100",
             )}
             href={item.url}

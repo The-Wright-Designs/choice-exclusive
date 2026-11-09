@@ -32,7 +32,7 @@ export function HeaderMobile({ cssClasses }: MobileHeaderProps) {
   return (
     <div className={classNames(cssClasses)}>
       <div className="flex w-full items-center justify-between">
-        <Link href="/">
+        <Link href="https://www.choicenet.co.za/" target="_blank">
           <Image
             src="/logo/choice-properties-logo.png"
             alt={COMPANY_NAME}
@@ -67,14 +67,14 @@ export function HeaderMobile({ cssClasses }: MobileHeaderProps) {
           </button>
         </div>
         <nav className="px-5">
-          <ul className="grid gap-4">
+          <ul className="grid gap-5">
             {navData.map(({ title, url }, id) => {
               return (
                 <li key={id}>
                   <Link
                     href={url}
                     onClick={() => setIsOpen(false)}
-                    className="text-paragraph text-white p-2 -m-2"
+                    className="text-subheading font-normal text-white p-2 -m-2"
                   >
                     {title}
                   </Link>

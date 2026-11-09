@@ -12,7 +12,10 @@ export default function ConservationComponent() {
     generalData.homePage.conservationSection;
 
   return (
-    <div className="relative overflow-hidden bg-dark-blue">
+    <div
+      id="conservation"
+      className="relative overflow-hidden bg-dark-blue scroll-mt-[81px] min-[1000px]:scroll-mt-[93px]"
+    >
       <div className="pointer-events-none absolute inset-0 mx-auto hidden max-w-[1280px] tablet:block">
         <div className="absolute left-[-255px] top-[-460px] h-[1536px] w-[1500px]">
           <Image

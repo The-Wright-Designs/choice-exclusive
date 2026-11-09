@@ -11,7 +11,9 @@ export default function ViticultureComponent() {
     generalData.homePage.viticultureSection;
 
   return (
-    <PageWrapper cssClasses="flex flex-col gap-10 py-15 desktop:flex-row desktop:items-stretch desktop:gap-7">
+    <PageWrapper
+      id="viticulture"
+      cssClasses="flex flex-col gap-10 py-15 scroll-mt-[81px] min-[1000px]:scroll-mt-[93px] desktop:flex-row desktop:items-stretch desktop:gap-7">
       <div className="contents desktop:flex desktop:flex-col desktop:gap-10 desktop:w-[583px] desktop:shrink-0 desktop:justify-center">
         <SectionHeading
           heading={heading}
