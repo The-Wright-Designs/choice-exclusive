@@ -11,7 +11,7 @@ export default function HeroComponent() {
     >
       <div className="relative flex flex-col h-[605px] tablet:h-[700px] min-[1100px]:h-[605px] min-[1100px]:items-center min-[1100px]:justify-center min-[1100px]:gap-7 min-[1100px]:px-7">
         <Image
-          src="/images/hero/Mountain-Rose__015.JPG"
+          src="/images/hero/Mountain-Rose__015.jpg"
           alt="Mountain Rose"
           fill
           priority
