@@ -38,6 +38,7 @@ export function HeaderMobile({ cssClasses }: MobileHeaderProps) {
             alt={COMPANY_NAME}
             width={108}
             height={40}
+            priority
           />
         </Link>
         <button

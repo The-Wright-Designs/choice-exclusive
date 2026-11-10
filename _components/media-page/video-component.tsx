@@ -5,7 +5,7 @@ interface VideoComponentProps {
   cssClasses?: string;
 }
 
-const VIDEO_ID = "omQh49V0-jA";
+const VIDEO_ID = "aDyVc_d2FQw";
 const VIDEO_SRC = `https://www.youtube-nocookie.com/embed/${VIDEO_ID}?controls=0&disablekb=1&modestbranding=1&rel=0&playsinline=1&iv_load_policy=3&fs=0`;
 
 const VideoComponent = ({ cssClasses }: VideoComponentProps) => {

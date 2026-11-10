@@ -2,7 +2,7 @@ import classNames from "classnames";
 
 interface SectionHeadingProps {
   heading: string;
-  subheading: string;
+  subheading?: string;
   cssClasses?: string;
   headingCssClasses?: string;
   subheadingCssClasses?: string;
@@ -18,7 +18,7 @@ const SectionHeading = ({
   return (
     <div className={classNames("flex flex-col gap-2", cssClasses)}>
       <h2 className={headingCssClasses}>{heading}</h2>
-      <h3 className={subheadingCssClasses}>{subheading}</h3>
+      {subheading && <h3 className={subheadingCssClasses}>{subheading}</h3>}
     </div>
   );
 };

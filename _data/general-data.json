@@ -135,7 +135,10 @@
       ],
       "buttons": [
         { "label": "Video", "href": "#" },
-        { "label": "Contact", "href": "mailto:ian@choicenet.co.za?subject=Mountain%20Rose%20Request%20Contact%20Request" }
+        {
+          "label": "Contact",
+          "href": "mailto:ian@choicenet.co.za?subject=Mountain%20Rose%20Request%20Contact%20Request"
+        }
       ],
       "bottomImages": [
         {
@@ -164,7 +167,10 @@
       "quote": "“Scale, location, quality: it does not get better than this.”",
       "buttons": [
         { "label": "Video", "href": "#" },
-        { "label": "Contact", "href": "mailto:ian@choicenet.co.za?subject=Mountain%20Rose%20Request%20Contact%20Request" }
+        {
+          "label": "Contact",
+          "href": "mailto:ian@choicenet.co.za?subject=Mountain%20Rose%20Request%20Contact%20Request"
+        }
       ]
     },
     "conservationSection": {
@@ -206,5 +212,32 @@
         }
       ]
     }
+  },
+  "mediaPage": {
+    "gallery": [
+      "/images/gallery/mountain-rose-gallery-image-1.jpg",
+      "/images/gallery/mountain-rose-gallery-image-4.JPG",
+      "/images/gallery/mountain-rose-gallery-image-9.jpg",
+      "/images/gallery/mountain-rose-gallery-image-22.jpg",
+      "/images/gallery/mountain-rose-gallery-image-3.jpg",
+      "/images/gallery/mountain-rose-gallery-image-11.jpg",
+      "/images/gallery/mountain-rose-gallery-image-18.jpg",
+      "/images/gallery/mountain-rose-gallery-image-5.JPG",
+      "/images/gallery/mountain-rose-gallery-image-8.jpg",
+      "/images/gallery/mountain-rose-gallery-image-21.jpg",
+      "/images/gallery/mountain-rose-gallery-image-12.jpg",
+      "/images/gallery/mountain-rose-gallery-image-7.JPG",
+      "/images/gallery/mountain-rose-gallery-image-16.JPG",
+      "/images/gallery/mountain-rose-gallery-image-2.jpg",
+      "/images/gallery/mountain-rose-gallery-image-19.JPG",
+      "/images/gallery/mountain-rose-gallery-image-13.jpg",
+      "/images/gallery/mountain-rose-gallery-image-14.jpg",
+      "/images/gallery/mountain-rose-gallery-image-6.JPG",
+      "/images/gallery/mountain-rose-gallery-image-17.jpg",
+      "/images/gallery/mountain-rose-gallery-image-15.JPG",
+      "/images/gallery/mountain-rose-gallery-image-20.jpg",
+      "/images/gallery/mountain-rose-gallery-image-10.JPG",
+      "/images/gallery/mountain-rose-gallery-image-23.jpg"
+    ]
   }
 }

@@ -8,7 +8,7 @@ const FooterComponent = async () => {
   "use cache";
 
   return (
-    <footer className="bg-white w-full">
+    <footer className="bg-white w-full border-t border-dark-blue">
       <div className="px-7 pt-15 pb-10 flex flex-col gap-7 desktop:max-w-[1280px] desktop:mx-auto desktop:pt-10 desktop:pb-5 min-[1336px]:px-0">
         <div className="flex flex-col gap-7 items-center desktop:flex-row desktop:justify-between desktop:items-start desktop:gap-0">
           <div className="flex flex-col gap-3 items-center">

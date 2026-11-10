@@ -20,6 +20,7 @@ const HeaderDesktop = ({ cssClasses }: DesktopHeaderProps) => {
           alt="Choice Property Group"
           width={129}
           height={48}
+          priority
         />
       </Link>
       <nav className="flex gap-2.5 items-center">
