@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import PageWrapper from "@/_lib/utils/page-wrapper";
 import HeroComponent from "@/_components/home-page/hero/hero-component";
 import InfoComponent from "@/_components/home-page/info/info-component";
@@ -11,26 +10,6 @@ import Image from "next/image";
 import VineGraphic from "@/_components/ui/vine-graphic";
 import MobileSeparator from "@/_components/ui/mobile-separator";
 import ContactComponent from "@/_components/home-page/contact/contact-component";
-
-const title =
-  "Mountain Rose | 155Ha Hemel-en-Aarde Valley Farm for Sale, Hermanus";
-const description =
-  "Mountain Rose is a 155Ha farm in the Hemel-en-Aarde Valley near Hermanus, Western Cape, with 40Ha of arable land, 115Ha of conservation land, water rights and ocean views. On the market for the first time in nearly 50 years.";
-
-export const metadata: Metadata = {
-  title,
-  description,
-  alternates: { canonical: "/" },
-  openGraph: {
-    title,
-    description,
-    url: "/",
-    type: "website",
-    locale: "en_ZA",
-    siteName: "Choice Property Group",
-    images: [{ url: "/open-graph-image.webp" }],
-  },
-};
 
 export default function HomePage() {
   return (

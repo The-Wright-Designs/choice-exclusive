@@ -17,28 +17,36 @@ import "@/_styles/globals.css";
 import HeaderComponent from "@/_components/navigation/header-component";
 import FooterComponent from "@/_components/navigation/footer-component";
 
+const title =
+  "Mountain Rose | 155Ha Hemel-en-Aarde Valley Farm for Sale, Hermanus";
+const description =
+  "Mountain Rose is a 155Ha farm in the Hemel-en-Aarde Valley near Hermanus, Western Cape, with 40Ha of arable land, 115Ha of conservation land, water rights and ocean views. On the market for the first time in nearly 50 years.";
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://exclusive.choicenet.co.za"),
-  title: "Choice Property Group",
-  description:
-    "Choice Property Group offers exclusive property listings and professional real estate services.",
+  title,
+  description,
   keywords: [
+    "Mountain Rose",
+    "Hemel-en-Aarde farm for sale",
+    "Hemel-en-Aarde Valley",
+    "Hermanus farm for sale",
+    "wine farm for sale",
+    "vineyard land",
+    "luxury farm South Africa",
+    "Western Cape farm for sale",
+    "conservation land",
+    "Fernkloof Nature Reserve",
+    "Overstrand Municipality",
     "Choice Property Group",
     "Choice Exclusive",
     "exclusive property listings",
-    "real estate",
-    "property for sale",
-    "property for rent",
-    "estate agents",
-    "property management",
-    "buy a home",
-    "sell your property",
-    "residential property",
-    "South Africa property",
   ],
+  alternates: { canonical: "/" },
   openGraph: {
-    description:
-      "Choice Property Group offers exclusive property listings and professional real estate services.",
+    title,
+    description,
+    url: "/",
     type: "website",
     locale: "en_ZA",
     siteName: "Choice Property Group",
