@@ -135,7 +135,7 @@
       ],
       "buttons": [
         { "label": "Video", "href": "#" },
-        { "label": "Contact", "href": "/contact" }
+        { "label": "Contact", "href": "mailto:ian@choicenet.co.za?subject=Mountain%20Rose%20Request%20Contact%20Request" }
       ],
       "bottomImages": [
         {
@@ -164,7 +164,7 @@
       "quote": "“Scale, location, quality: it does not get better than this.”",
       "buttons": [
         { "label": "Video", "href": "#" },
-        { "label": "Contact", "href": "/contact" }
+        { "label": "Contact", "href": "mailto:ian@choicenet.co.za?subject=Mountain%20Rose%20Request%20Contact%20Request" }
       ]
     },
     "conservationSection": {

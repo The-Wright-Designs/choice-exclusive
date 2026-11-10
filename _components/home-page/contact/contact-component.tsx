@@ -36,7 +36,7 @@ export default function ContactComponent() {
           </p>
           <div className="flex flex-col gap-7 desktop:flex-row">
             <ButtonLink cssClasses="w-full desktop:w-auto">Video</ButtonLink>
-            <ButtonLink cssClasses="w-full desktop:w-auto">Contact</ButtonLink>
+            <ButtonLink href="mailto:ian@choicenet.co.za?subject=Mountain%20Rose%20Request%20Contact%20Request" cssClasses="w-full desktop:w-auto">Contact</ButtonLink>
           </div>
         </div>
         <div className="flex flex-col gap-10">

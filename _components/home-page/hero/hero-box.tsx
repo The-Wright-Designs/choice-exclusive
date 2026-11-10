@@ -30,7 +30,7 @@ const HeroBox = ({ cssClasses }: HeroBoxProps) => {
           <ButtonLink href="/media" cssClasses="flex-1">
             Video
           </ButtonLink>
-          <ButtonLink href="/#contact" cssClasses="flex-1">
+          <ButtonLink href="mailto:ian@choicenet.co.za?subject=Mountain%20Rose%20Request%20Contact%20Request" cssClasses="flex-1">
             Contact
           </ButtonLink>
         </div>
