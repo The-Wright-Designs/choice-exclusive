@@ -28,8 +28,10 @@ export default function HeroComponent() {
       <div className="min-[1100px]:hidden flex flex-col gap-10 bg-dark-blue px-7 py-15 rounded-b-[6px]">
         <div className="flex flex-col items-center gap-4">
           <div className="flex flex-col gap-5 justify-center w-full min-[600px]:flex-row">
-            <ButtonLink href="/#video">Video</ButtonLink>
-            <ButtonLink href="mailto:ian@choicenet.co.za?subject=Mountain%20Rose%20Contact%20Request">Contact</ButtonLink>
+            <ButtonLink href="/media">Video</ButtonLink>
+            <ButtonLink href="mailto:ian@choicenet.co.za?subject=Mountain%20Rose%20Contact%20Request">
+              Contact
+            </ButtonLink>
           </div>
           <p className="text-gold text-[16px] font-medium">
             Viewing Strictly by Appointment

@@ -36,7 +36,9 @@ export default function ContactComponent() {
             enquiries
           </p>
           <div className="flex flex-col gap-7 desktop:flex-row">
-            <ButtonLink cssClasses="w-full desktop:w-auto">Video</ButtonLink>
+            <ButtonLink cssClasses="w-full desktop:w-auto" href="/media">
+              Video
+            </ButtonLink>
             <ButtonLink
               href="mailto:ian@choicenet.co.za?subject=Mountain%20Rose%20Contact%20Request"
               cssClasses="w-full desktop:w-auto"
