@@ -1,5 +1,7 @@
+import VideoComponent from "@/_components/media-page/video-component";
+
 const MediaPage = () => {
-  return <div>Enter</div>;
+  return <VideoComponent />;
 };
 
 export default MediaPage;
