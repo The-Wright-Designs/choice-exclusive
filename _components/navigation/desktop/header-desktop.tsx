@@ -33,6 +33,8 @@ const HeaderDesktop = ({ cssClasses }: DesktopHeaderProps) => {
               "desktop:hover:after:scale-x-100",
             )}
             href={item.url}
+            target={item.newTab ? "_blank" : undefined}
+            rel={item.newTab ? "noopener noreferrer" : undefined}
           >
             {item.title}
           </Link>

@@ -30,11 +30,13 @@ const FooterComponent = async () => {
           </div>
           <nav className="hidden desktop:block">
             <ul className="text-center">
-              {navData.map(({ title, url }, id) => {
+              {navData.map(({ title, url, newTab }, id) => {
                 return (
                   <li key={id}>
                     <Link
                       href={url}
+                      target={newTab ? "_blank" : undefined}
+                      rel={newTab ? "noopener noreferrer" : undefined}
                       className="text-[12px] font-extralight text-black desktop:hover:opacity-80"
                     >
                       {title}

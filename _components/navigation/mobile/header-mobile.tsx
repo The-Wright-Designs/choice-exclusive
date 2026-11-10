@@ -69,11 +69,13 @@ export function HeaderMobile({ cssClasses }: MobileHeaderProps) {
         </div>
         <nav className="px-5">
           <ul className="grid gap-5">
-            {navData.map(({ title, url }, id) => {
+            {navData.map(({ title, url, newTab }, id) => {
               return (
                 <li key={id}>
                   <Link
                     href={url}
+                    target={newTab ? "_blank" : undefined}
+                    rel={newTab ? "noopener noreferrer" : undefined}
                     onClick={() => setIsOpen(false)}
                     className="text-subheading font-normal text-white p-2 -m-2"
                   >

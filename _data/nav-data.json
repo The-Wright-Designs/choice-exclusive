@@ -24,7 +24,16 @@
     "url": "/#maps"
   },
   {
+    "title": "Video",
+    "url": "/media"
+  },
+  {
     "title": "Contact",
-    "url": "/#contact"
+    "url": "mailto:ian@choicenet.co.za?subject=Mountain%20Rose%20Contact%20Request"
+  },
+  {
+    "title": "Choice Properties",
+    "url": "https://choicenet.co.za",
+    "newTab": true
   }
 ]
