@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   images: {
     deviceSizes: [425, 800, 1280, 1920],
     minimumCacheTTL: 31536000,
+    qualities: [50, 75],
   },
   experimental: {
     agentFeedback: true,

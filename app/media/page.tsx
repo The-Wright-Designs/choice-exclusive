@@ -4,6 +4,7 @@ import GallerySlider from "@/_components/media-page/gallery-slider";
 import SectionHeading from "@/_components/ui/section-heading";
 import PageWrapper from "@/_lib/utils/page-wrapper";
 import generalData from "@/_data/general-data.json";
+import VineGraphic from "@/_components/ui/vine-graphic";
 
 const title = "Media | Mountain Rose, Hemel-en-Aarde Valley, Hermanus";
 const description =
@@ -28,7 +29,8 @@ const MediaPage = () => {
   return (
     <div>
       <VideoComponent />
-      <PageWrapper cssClasses="flex flex-col gap-6 py-10">
+      <PageWrapper cssClasses="flex flex-col gap-6 py-10 relative isolate overflow-clip">
+        <VineGraphic cssClasses="left-[-50px] top-[-150px] h-auto w-[900px] tablet:left-[50px] desktop:left-[100px]" />
         <SectionHeading heading="Gallery" />
         <GallerySlider data={generalData.mediaPage.gallery} />
       </PageWrapper>

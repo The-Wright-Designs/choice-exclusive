@@ -8,10 +8,12 @@ import ViticultureComponent from "@/_components/home-page/viticulture/viticultur
 import ConservationComponent from "@/_components/home-page/conservation/conservation-component";
 import MapsComponent from "@/_components/home-page/maps/maps-component";
 import Image from "next/image";
+import VineGraphic from "@/_components/ui/vine-graphic";
 import MobileSeparator from "@/_components/ui/mobile-separator";
 import ContactComponent from "@/_components/home-page/contact/contact-component";
 
-const title = "Mountain Rose | 155Ha Hemel-en-Aarde Valley Farm for Sale, Hermanus";
+const title =
+  "Mountain Rose | 155Ha Hemel-en-Aarde Valley Farm for Sale, Hermanus";
 const description =
   "Mountain Rose is a 155Ha farm in the Hemel-en-Aarde Valley near Hermanus, Western Cape, with 40Ha of arable land, 115Ha of conservation land, water rights and ocean views. On the market for the first time in nearly 50 years.";
 
@@ -34,13 +36,19 @@ export default function HomePage() {
   return (
     <div>
       <HeroComponent />
-      <InfoComponent />
-      <MobileSeparator />
-      <OverviewComponent />
+      <div className="relative isolate overflow-clip">
+        <VineGraphic cssClasses="left-[-150px] top-0 h-auto w-[900px] tablet:left-[50px] desktop:left-[400px]" />
+        <InfoComponent />
+        <MobileSeparator />
+        <OverviewComponent />
+      </div>
       <MountainRoseComponent />
-      <ViticultureComponent />
-      <ConservationComponent />
-      <MapsComponent />
+      <div className="relative isolate overflow-clip">
+        <VineGraphic cssClasses="left-[-180px] top-[-90px] h-auto w-[900px] tablet:left-[80px] desktop:left-[300px]" />
+        <ViticultureComponent />
+        <ConservationComponent />
+        <MapsComponent />
+      </div>
       <Image
         src="/images/Mountain-Rose__011.jpg"
         alt="Aerial view of Mountain Rose overlooking the coast"

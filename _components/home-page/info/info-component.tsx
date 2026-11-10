@@ -13,8 +13,7 @@ const imageStyles = [
     image: "min-[1000px]:object-bottom",
   },
   {
-    wrapper:
-      "h-[222px] min-[1000px]:aspect-auto min-[1000px]:order-3",
+    wrapper: "aspect-video min-[1000px]:aspect-auto min-[1000px]:order-3",
     image: "min-[1000px]:object-[88%_center]",
   },
   {
