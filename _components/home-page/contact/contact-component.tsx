@@ -32,11 +32,17 @@ export default function ContactComponent() {
             Viewing Strictly by Appointment
           </p>
           <p className="text-[20px] text-gold opacity-95">
-            Please contact Ian Carr or Deon de Swardt for all enquiries
+            Please contact Ian Carr or Deon&nbsp;de&nbsp;Swardt for all
+            enquiries
           </p>
           <div className="flex flex-col gap-7 desktop:flex-row">
             <ButtonLink cssClasses="w-full desktop:w-auto">Video</ButtonLink>
-            <ButtonLink href="mailto:ian@choicenet.co.za?subject=Mountain%20Rose%20Request%20Contact%20Request" cssClasses="w-full desktop:w-auto">Contact</ButtonLink>
+            <ButtonLink
+              href="mailto:ian@choicenet.co.za?subject=Mountain%20Rose%20Contact%20Request"
+              cssClasses="w-full desktop:w-auto"
+            >
+              Contact
+            </ButtonLink>
           </div>
         </div>
         <div className="flex flex-col gap-10">
@@ -44,7 +50,7 @@ export default function ContactComponent() {
             {agents.map(({ name, image, phone, email }) => (
               <div
                 key={name}
-                className="flex items-center gap-7 desktop:w-[396px]"
+                className="flex items-center gap-7 max-[375px]:flex-col max-[375px]:items-start max-[375px]:gap-4 desktop:w-[396px]"
               >
                 <Image
                   src={image}
@@ -53,7 +59,7 @@ export default function ContactComponent() {
                   height={100}
                   className="size-[100px] shrink-0 rounded-full object-cover"
                 />
-                <div className="flex flex-col gap-3">
+                <div className="flex min-w-0 flex-col gap-3">
                   <p className="font-semibold text-gold">{name}</p>
                   <div className="flex flex-col gap-1">
                     <Link
@@ -64,7 +70,7 @@ export default function ContactComponent() {
                     </Link>
                     <Link
                       href={`mailto:${email}`}
-                      className="-m-2 p-2 desktop:m-0 desktop:p-0 text-paragraph text-gold desktop:hover:opacity-85"
+                      className="-m-2 p-2 desktop:m-0 desktop:p-0 break-words text-paragraph text-gold desktop:hover:opacity-85"
                     >
                       {email}
                     </Link>
