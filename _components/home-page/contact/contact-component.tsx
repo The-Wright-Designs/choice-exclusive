@@ -12,7 +12,7 @@ const agents = [
     email: "ian@choicenet.co.za",
   },
   {
-    name: "Deon De Swardt",
+    name: "Deon de Swardt",
     image: "/images/contact/Deon-De-Swardt.png",
     phone: "+27 82 882 0625",
     email: "deon@choicenet.co.za",
@@ -26,14 +26,13 @@ export default function ContactComponent() {
       className="bg-dark-blue scroll-mt-[81px] min-[1000px]:scroll-mt-[93px]"
     >
       <PageWrapper cssClasses="flex flex-col gap-10 py-15">
-        <div className="flex flex-col gap-7">
+        <div className="flex flex-col gap-5">
           <h2 className="text-gold">Contact</h2>
           <p className="text-[20px] text-gold">
             Viewing Strictly by Appointment
           </p>
           <p className="text-[20px] text-gold opacity-95">
-            For further information contact us with any questions, to receive
-            additional detail or to arrange to view
+            Please contact Ian Carr or Deon de Swardt for all enquiries
           </p>
           <div className="flex flex-col gap-7 desktop:flex-row">
             <ButtonLink cssClasses="w-full desktop:w-auto">Video</ButtonLink>
@@ -88,43 +87,24 @@ export default function ContactComponent() {
         </div>
         <div className="h-px bg-white/50 opacity-40" />
         <div className="flex flex-col gap-10 desktop:flex-row">
-          <div className="flex flex-col gap-10 desktop:shrink-0">
-            <div className="flex flex-col gap-3 desktop:w-[210px]">
-              <h3 className="text-white">Head Office</h3>
-              <div className="flex flex-col gap-1">
-                <Link
-                  href="mailto:info@choicenet.co.za"
-                  className="-m-2 p-2 desktop:m-0 desktop:p-0 text-paragraph text-gold opacity-85 desktop:hover:opacity-100"
-                >
-                  info@choicenet.co.za
-                </Link>
-                <Link
-                  href="tel:+27445335981"
-                  className="-m-2 p-2 desktop:m-0 desktop:p-0 text-paragraph text-white opacity-85 desktop:hover:opacity-100"
-                >
-                  +27 44 533 5981
-                </Link>
-                <p className="text-white opacity-85">
-                  Noel Centre, Plettenberg Bay
-                </p>
-              </div>
-            </div>
-            <div className="flex flex-col gap-3">
-              <h3 className="text-white">Hermanus</h3>
-              <div className="flex flex-col gap-1">
-                <Link
-                  href="mailto:sherry@choicenet.co.za"
-                  className="-m-2 p-2 desktop:m-0 desktop:p-0 text-paragraph text-gold opacity-85 desktop:hover:opacity-100"
-                >
-                  sherry@choicenet.co.za
-                </Link>
-                <Link
-                  href="tel:+27720801199"
-                  className="-m-2 p-2 desktop:m-0 desktop:p-0 text-paragraph text-white opacity-85 desktop:hover:opacity-100"
-                >
-                  +27 72 080 1199
-                </Link>
-              </div>
+          <div className="flex flex-col gap-3 desktop:w-[210px]">
+            <h3 className="text-white">Head Office</h3>
+            <div className="flex flex-col gap-1">
+              <Link
+                href="mailto:info@choicenet.co.za"
+                className="-m-2 p-2 desktop:m-0 desktop:p-0 text-paragraph text-gold opacity-85 desktop:hover:opacity-100"
+              >
+                info@choicenet.co.za
+              </Link>
+              <Link
+                href="tel:+27445335981"
+                className="-m-2 p-2 desktop:m-0 desktop:p-0 text-paragraph text-white opacity-85 desktop:hover:opacity-100"
+              >
+                +27 44 533 5981
+              </Link>
+              <p className="text-white opacity-85">
+                Noel Centre, Plettenberg Bay
+              </p>
             </div>
           </div>
           <p className="text-white opacity-60">

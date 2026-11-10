@@ -45,7 +45,7 @@ const FooterComponent = async () => {
             </ul>
           </nav>
           <p className="text-[14px] font-extralight text-center flex flex-col desktop:text-right">
-            Designed &amp; developed by
+            Designed &amp; Developed by
             <Link
               href="https://thewrightdesigns.co.za"
               className="text-dark-blue desktop:hover:opacity-80"

@@ -13,7 +13,8 @@ export default function ViticultureComponent() {
   return (
     <PageWrapper
       id="viticulture"
-      cssClasses="flex flex-col gap-10 py-15 scroll-mt-[81px] min-[1000px]:scroll-mt-[93px] desktop:flex-row desktop:items-stretch desktop:gap-7">
+      cssClasses="flex flex-col gap-10 py-15 scroll-mt-[81px] min-[1000px]:scroll-mt-[93px] desktop:flex-row desktop:items-stretch desktop:gap-7"
+    >
       <div className="contents desktop:flex desktop:flex-col desktop:gap-10 desktop:w-[583px] desktop:shrink-0 desktop:justify-center">
         <SectionHeading
           heading={heading}
@@ -29,7 +30,7 @@ export default function ViticultureComponent() {
             </li>
           ))}
         </ul>
-        <p className="text-[21px] font-semibold text-dark-gold">{quote}</p>
+        <p className="text-[21px] font-semibold text-dark-blue">{quote}</p>
         <div className="flex flex-col gap-5 min-[600px]:flex-row desktop:gap-7">
           {buttons.map((button) => (
             <ButtonLink

@@ -16,7 +16,7 @@
         }
       ],
       "landCards": [
-        { "icon": "ruler", "title": "Land size 155 Ha" },
+        { "icon": "ruler", "title": "Land size 155Ha" },
         { "icon": "droplets", "title": "Water Rights" },
         { "icon": "sprout", "title": "Arable land & Conservation" }
       ],
@@ -25,7 +25,7 @@
         "name": "Cape Town International",
         "stats": [
           { "value": "110 km / 68 miles", "label": "from Cape Town" },
-          { "value": "1 hr 15 min", "label": "Drive time" }
+          { "value": "1 hr 15 min", "label": "drive time" }
         ]
       },
       "location": {
@@ -58,7 +58,7 @@
         },
         {
           "title": "Extent Registered",
-          "paragraphs": ["155.9517 Ha"]
+          "paragraphs": ["155.9517Ha"]
         },
         {
           "title": "Price",
@@ -70,9 +70,9 @@
           ]
         },
         {
-          "title": "Arable land 40 Ha",
+          "title": "Arable land 40Ha",
           "paragraphs": [
-            "40 Ha predominantly south and southwest facing slopes. Stoney, high clay-content Bokkeveld Shale-derived soil as well as lighter structured Table Mountain Sandstone-derived soil. Not used for agriculture for 50 years. Current environmental authorisation for up to 20 Ha of vineyard cultivation. Further authorisation by application."
+            "40Ha predominantly south and southwest facing slopes. Stoney, high clay-content Bokkeveld Shale-derived soil as well as lighter structured Table Mountain Sandstone-derived soil. Not used for agriculture for 50 years. Current environmental authorisation for up to 20Ha of vineyard cultivation. Further authorisation by application."
           ]
         },
         {
@@ -90,7 +90,7 @@
         {
           "title": "Infrastructure",
           "paragraphs": [
-            "Adequate network of farm roads and 4x4 access tracks. Mountain footpath network (accessing Fernkloof Nature Reserve). 2,000m³ earth dam. 3 or 4 simple cottages plus various small outbuildings. No significant development."
+            "Adequate network of farm roads and 4x4 access tracks. Mountain footpath network (accessing Fernkloof Nature Reserve). 2,000m³ earth dam. 3 simple cottages plus various small outbuildings. No significant development."
           ]
         },
         {
@@ -155,7 +155,7 @@
         "src": "/images/viticulture/Mountain-Rose__003.jpg",
         "alt": "Mountains rising above the fynbos and arable slopes"
       },
-      "highlight": "40 hectares of arable land, unused for 50 years with no trace of chemical herbicides, pesticides or fertilisers. Alive with possibility.",
+      "highlight": "40 hectares of arable land, unused for 50 years, with no trace of chemical herbicides, pesticides or fertilisers. Alive with possibility.",
       "bullets": [
         "The farm’s 40 hectares of arable land have not been used for agriculture for 50 years, and never for viticulture. They have reverted to indigenous vegetation and are alive with possibility.",
         "If developed, this land would make up 9% of total vineyard land in the three Hemel-en-Aarde appellations, placing the property firmly in the big league.",
@@ -168,7 +168,7 @@
       ]
     },
     "conservationSection": {
-      "heading": "Conservation 115 Hectares",
+      "heading": "Conservation 115 Hectares",
       "subheading": "Space and privacy that is increasingly rare",
       "bullets": [
         "Mountain Rose is a founder member of the Hemel-en-Aarde Conservancy. It has followed an extensive conservation management plan for many years under the guidance of Sean Privett, a well-known botanical specialist.",
@@ -176,8 +176,8 @@
         "The farm is not bound by any environmental stewardship or private nature reserve agreement and remains free to enter into such an agreement if deemed appropriate.",
         "The farm’s mountain land and stream systems confer significant capacity for terrestrial and wetland conservation offsets, if required."
       ],
-      "paragraph": "Mountain Rose is the sleeping giant of the Hemel-en-Aarde Valley, serving as an extended green belt between scenic wine estates and the rugged mountain ranges behind the historic seaside town of Hermanus. Fynbos-covered uplands and a significant wetland habitat along the farm’s southern boundary provide a sanctuary for dozens of bird species, numerous small game species, and the secretive Cape Mountain Leopard. Ever-present, over all of this, are the cooling breezes off the South Atlantic Ocean.",
-      "quote": "“The farm includes the highest privately-owned land in the Hemel-en-Aarde Valley. It ascends by 500m over a distance of 3.5km. This is land where the Cape Mountain Leopard still roams and where you can hear the call of the African fish eagle.”",
+      "paragraph": "Mountain Rose is the sleeping giant of the Hemel-en-Aarde Valley, serving as an extended green belt between scenic wine estates and the rugged mountain ranges behind the historic seaside town of Hermanus. Fynbos-covered uplands and a significant wetland habitat along the farm’s southern boundary provide a sanctuary for dozens of bird species, numerous small game species, and the secretive Cape mountain leopard. Ever-present, over all of this, are the cooling breezes off the South Atlantic Ocean.",
+      "quote": "“The farm includes the highest privately-owned land in the Hemel-en-Aarde Valley. It ascends by 500m over a distance of 3.5km. This is land where the Cape mountain leopard still roams and where you can hear the call of the African fish eagle.”",
       "graphic": {
         "src": "/images/conservation/leopard-graphic.png"
       },

@@ -44,7 +44,7 @@ export default function ConservationComponent() {
               width={1500}
               height={806}
               sizes="(max-width: 1280px) 100vw, 1224px"
-              className="pointer-events-none absolute bottom-[8.5%] left-[-67.15%] h-auto w-[219.76%] max-w-none opacity-10 min-[500px]:bottom-[-25%] min-[700px]:bottom-[-40%] tablet:hidden"
+              className="pointer-events-none absolute left-[-152.48%] top-[66.31%] h-auto w-[412.06%] max-w-none opacity-10 phone:top-[46.31%] min-[500px]:top-[25.31%] min-[600px]:top-[15%] min-[700px]:top-0 tablet:hidden"
             />
             <ul className="relative flex flex-col gap-5">
               {bullets.map((bullet) => (

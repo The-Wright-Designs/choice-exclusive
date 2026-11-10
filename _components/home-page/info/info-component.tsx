@@ -8,15 +8,18 @@ import InfoDetailCards from "./info-detail-cards";
 
 const imageStyles = [
   {
-    wrapper: "aspect-video min-[1000px]:aspect-auto min-[1000px]:order-1",
+    wrapper:
+      "hidden min-[1000px]:block min-[1000px]:aspect-auto min-[1000px]:order-1",
     image: "min-[1000px]:object-bottom",
   },
   {
-    wrapper: "aspect-video min-[1000px]:aspect-auto min-[1000px]:order-3",
+    wrapper:
+      "h-[222px] min-[1000px]:aspect-auto min-[1000px]:order-3",
     image: "min-[1000px]:object-[88%_center]",
   },
   {
-    wrapper: "aspect-square min-[1000px]:aspect-auto min-[1000px]:order-2",
+    wrapper:
+      "hidden min-[1000px]:block min-[1000px]:aspect-auto min-[1000px]:order-2",
     image: "min-[1000px]:object-[center_32%]",
   },
 ];

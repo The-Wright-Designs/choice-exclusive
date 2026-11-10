@@ -27,9 +27,6 @@ export default async function MapsComponent() {
       cssClasses="flex flex-col gap-7 py-15 scroll-mt-[81px] min-[1000px]:scroll-mt-[93px]"
     >
       <h2 className="tablet:text-center">{heading}</h2>
-      <p className="text-dark-blue tablet:order-3 tablet:text-justify">
-        {paragraph}
-      </p>
       <div className="flex flex-col gap-7 tablet:flex-row">
         {mapsWithPdfInfo.map((map) => (
           <MapCard
@@ -41,6 +38,9 @@ export default async function MapsComponent() {
           />
         ))}
       </div>
+      <p className="text-dark-blue tablet:text-justify">
+        {paragraph}
+      </p>
     </PageWrapper>
   );
 }

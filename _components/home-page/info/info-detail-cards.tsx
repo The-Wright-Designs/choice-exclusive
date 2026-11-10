@@ -22,11 +22,11 @@ const InfoDetailCards = ({
   return (
     <div
       className={classNames(
-        "grid grid-cols-1 gap-7 min-[700px]:grid-cols-2 min-[1100px]:grid-cols-3",
+        "grid grid-cols-1 gap-7 tablet:grid-cols-2 min-[1100px]:grid-cols-3",
         cssClasses,
       )}
     >
-      <div className="flex flex-col gap-3 bg-dark-blue px-5 py-7 rounded-[6px] desktop:py-5 desktop:h-[165px]">
+      <div className="flex flex-col gap-3 bg-dark-blue p-5 tablet:py-7 rounded-[6px] desktop:py-5 desktop:h-[165px]">
         <div className="flex items-center gap-[10px]">
           <div className="flex items-center justify-center shrink-0 size-[52px] bg-white/15 rounded-[8px] desktop:size-8">
             <Plane size={28} color="#ffffff" className="desktop:size-[18px]" />
@@ -47,7 +47,7 @@ const InfoDetailCards = ({
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-3 bg-dark-blue px-5 py-7 rounded-[6px] desktop:py-5 desktop:h-[165px]">
+      <div className="flex flex-col gap-3 bg-dark-blue p-5 tablet:py-7 rounded-[6px] desktop:py-5 desktop:h-[165px]">
         <div className="flex items-center gap-[10px]">
           <div className="flex items-center justify-center shrink-0 size-[52px] bg-white/15 rounded-[8px] desktop:size-8">
             <MapPin size={28} color="#ffffff" className="desktop:size-[18px]" />
@@ -58,7 +58,7 @@ const InfoDetailCards = ({
         </div>
         <p className="text-white leading-normal">{location.description}</p>
       </div>
-      <div className="flex flex-col gap-3 bg-dark-blue px-5 py-7 rounded-[6px] desktop:py-5 desktop:h-[165px]">
+      <div className="flex flex-col gap-3 bg-dark-blue p-5 tablet:py-7 rounded-[6px] desktop:py-5 desktop:h-[165px]">
         <div className="flex items-center gap-[10px]">
           <div className="flex items-center justify-center shrink-0 size-[52px] bg-white/10 rounded-[8px] desktop:size-8">
             <Compass
