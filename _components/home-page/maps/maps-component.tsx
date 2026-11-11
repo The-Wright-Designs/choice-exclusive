@@ -32,6 +32,7 @@ export default async function MapsComponent() {
           <MapCard
             key={map.pdf}
             image={map.image}
+            fullSrc={map.fullSrc}
             pdfHref={map.pdf}
             pdfName={map.pdfName}
             pdfSize={map.pdfSize}

@@ -3,9 +3,9 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   images: {
-    deviceSizes: [425, 800, 1280, 1920],
+    deviceSizes: [425, 800, 1280, 1920, 2560, 3840],
     minimumCacheTTL: 31536000,
-    qualities: [50, 75],
+    qualities: [50, 90],
   },
   experimental: {
     agentFeedback: true,

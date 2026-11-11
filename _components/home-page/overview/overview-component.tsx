@@ -57,7 +57,7 @@ export default function OverviewComponent() {
               src={image.src}
               alt={image.alt}
               fill
-              sizes="(max-width: 1280px) 100vw, 550px"
+              sizes="(max-width: 1280px) 100vw, 1280px"
               className="object-cover"
             />
           </div>

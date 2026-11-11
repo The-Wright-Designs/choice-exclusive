@@ -48,7 +48,7 @@ export default function ViticultureComponent() {
           src={image.src}
           alt={image.alt}
           fill
-          sizes="(max-width: 1280px) 100vw, 1224px"
+          sizes="100vw"
           className="object-cover"
         />
       </div>
@@ -68,7 +68,7 @@ export default function ViticultureComponent() {
                 src={image.src}
                 alt={index === 0 ? image.alt : ""}
                 fill
-                sizes="700px"
+                sizes="1280px"
                 className="object-cover object-left"
               />
             </div>

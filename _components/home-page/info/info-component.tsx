@@ -10,7 +10,7 @@ const imageStyles = [
   {
     wrapper:
       "hidden min-[1000px]:block min-[1000px]:aspect-auto min-[1000px]:order-1",
-    image: "min-[1000px]:object-bottom",
+    image: "object-[center_30%]",
   },
   {
     wrapper: "aspect-video min-[1000px]:aspect-auto min-[1000px]:order-3",

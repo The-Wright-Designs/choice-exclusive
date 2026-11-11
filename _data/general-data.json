@@ -201,6 +201,7 @@
             "src": "/maps/Mountain-Rose__016.jpg",
             "alt": "Aerial map showing the boundary of Farm 585 RE"
           },
+          "fullSrc": "/images/gallery/map-1-full.jpg",
           "pdf": "/maps/Plan-of-Farm-585-RE-(Remainder-of-the-Farm-Hemel-en-Aarde)-2026.10.27.pdf"
         },
         {
@@ -208,6 +209,7 @@
             "src": "/maps/Mountain-Rose__017.jpg",
             "alt": "Aerial map showing the locality of Farm 585 RE"
           },
+          "fullSrc": "/images/gallery/map-2-full.jpg",
           "pdf": "/maps/Plan-of-locality-of-Farm-585-RE-(Remainder-of-the-Farm-Hemel-en-Aarde)-2026.10.27.pdf"
         }
       ]
@@ -216,27 +218,29 @@
   "mediaPage": {
     "gallery": [
       "/images/gallery/mountain-rose-gallery-image-1.jpg",
-      "/images/gallery/mountain-rose-gallery-image-4.jpg",
-      "/images/gallery/mountain-rose-gallery-image-9.jpg",
-      "/images/gallery/mountain-rose-gallery-image-22.jpg",
-      "/images/gallery/mountain-rose-gallery-image-3.jpg",
-      "/images/gallery/mountain-rose-gallery-image-11.jpg",
-      "/images/gallery/mountain-rose-gallery-image-18.jpg",
-      "/images/gallery/mountain-rose-gallery-image-5.jpg",
-      "/images/gallery/mountain-rose-gallery-image-8.jpg",
-      "/images/gallery/mountain-rose-gallery-image-21.jpg",
-      "/images/gallery/mountain-rose-gallery-image-12.jpg",
-      "/images/gallery/mountain-rose-gallery-image-7.jpg",
-      "/images/gallery/mountain-rose-gallery-image-16.jpg",
       "/images/gallery/mountain-rose-gallery-image-2.jpg",
-      "/images/gallery/mountain-rose-gallery-image-19.jpg",
+      "/images/gallery/mountain-rose-gallery-image-3.jpg",
+      "/images/gallery/mountain-rose-gallery-image-4.jpg",
+      "/images/gallery/mountain-rose-gallery-image-5.jpg",
+      "/images/gallery/mountain-rose-gallery-image-6.jpg",
+      "/images/gallery/mountain-rose-gallery-image-7.jpg",
+      "/images/gallery/mountain-rose-gallery-image-8.jpg",
+      "/images/gallery/mountain-rose-gallery-image-9.jpg",
+      "/images/gallery/mountain-rose-gallery-image-10.jpg",
+      "/images/gallery/mountain-rose-gallery-image-11.jpg",
+      "/images/gallery/mountain-rose-gallery-image-12.jpg",
       "/images/gallery/mountain-rose-gallery-image-13.jpg",
       "/images/gallery/mountain-rose-gallery-image-14.jpg",
-      "/images/gallery/mountain-rose-gallery-image-6.jpg",
-      "/images/gallery/mountain-rose-gallery-image-17.jpg",
       "/images/gallery/mountain-rose-gallery-image-15.jpg",
+      "/images/gallery/map-1-full.jpg",
+      "/images/gallery/map-2-full.jpg",
+      "/images/gallery/mountain-rose-gallery-image-16.jpg",
+      "/images/gallery/mountain-rose-gallery-image-17.jpg",
+      "/images/gallery/mountain-rose-gallery-image-18.jpg",
+      "/images/gallery/mountain-rose-gallery-image-19.jpg",
       "/images/gallery/mountain-rose-gallery-image-20.jpg",
-      "/images/gallery/mountain-rose-gallery-image-10.jpg",
+      "/images/gallery/mountain-rose-gallery-image-21.jpg",
+      "/images/gallery/mountain-rose-gallery-image-22.jpg",
       "/images/gallery/mountain-rose-gallery-image-23.jpg"
     ]
   }

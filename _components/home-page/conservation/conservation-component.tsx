@@ -71,7 +71,7 @@ export default function ConservationComponent() {
                 alt={index === 0 ? image.alt : ""}
                 width={1280}
                 height={800}
-                sizes="(max-width: 1280px) 100vw, 1224px"
+                sizes="100vw"
                 className={classNames(
                   "absolute left-0 h-[325.28%] w-full max-w-none object-cover",
                   offset,
@@ -85,7 +85,7 @@ export default function ConservationComponent() {
             src={image.src}
             alt={image.alt}
             fill
-            sizes="383px"
+            sizes="(max-width: 1280px) 40vw, 440px"
             className="object-cover"
           />
         </div>

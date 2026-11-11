@@ -20,6 +20,14 @@ interface Props {
 const GallerySlider = ({ cssClasses, data }: Props) => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const lightboxSwiper = useRef<SwiperType | null>(null);
+  const gallerySwiper = useRef<SwiperType | null>(null);
+  const [isBeginning, setIsBeginning] = useState(true);
+  const [isEnd, setIsEnd] = useState(false);
+
+  const syncEdges = (swiper: SwiperType) => {
+    setIsBeginning(swiper.isBeginning);
+    setIsEnd(swiper.isEnd);
+  };
 
   useEffect(() => {
     if (activeIndex === null) return;
@@ -38,8 +46,33 @@ const GallerySlider = ({ cssClasses, data }: Props) => {
   }, [activeIndex]);
 
   return (
-    <>
+    <div className="relative">
+      <button
+        type="button"
+        aria-label="Previous gallery image"
+        onClick={() => gallerySwiper.current?.slidePrev()}
+        disabled={isBeginning}
+        className="absolute left-4 bg-dark-blue/80 rounded-md top-[calc(50%-20px)] z-10 hidden -translate-y-1/2 min-[1000px]:block desktop:hover:cursor-pointer desktop:enabled:hover:bg-dark-blue disabled:opacity-40 ease-in-out duration-300"
+      >
+        <ChevronLeft color="#ffffff" size={40} />
+      </button>
+      <button
+        type="button"
+        aria-label="Next gallery image"
+        onClick={() => gallerySwiper.current?.slideNext()}
+        disabled={isEnd}
+        className="absolute bg-dark-blue/80 rounded-md right-4 top-[calc(50%-20px)] z-10 hidden -translate-y-1/2 min-[1000px]:block desktop:hover:cursor-pointer desktop:enabled:hover:bg-dark-blue disabled:opacity-40 ease-in-out duration-3000"
+      >
+        <ChevronRight color="#ffffff" size={40} />
+      </button>
       <Swiper
+        onSwiper={(swiper) => {
+          gallerySwiper.current = swiper;
+          syncEdges(swiper);
+        }}
+        onSlideChange={syncEdges}
+        onBreakpoint={syncEdges}
+        onResize={syncEdges}
         spaceBetween={12}
         slidesPerView={1}
         breakpoints={{
@@ -59,12 +92,12 @@ const GallerySlider = ({ cssClasses, data }: Props) => {
         focusableElements="input, select, textarea"
       >
         {data.map((slide, index) => (
-          <SwiperSlide key={slide}>
+          <SwiperSlide key={slide} className="overflow-hidden">
             <button
               type="button"
               aria-label={`Open gallery image ${index + 1}`}
               onClick={() => setActiveIndex(index)}
-              className="relative block aspect-[3/2] w-full desktop:hover:cursor-pointer"
+              className="relative block aspect-[3/2] w-full desktop:hover:cursor-pointer desktop:hover:scale-102 ease-in-out duration-300 delay-150"
             >
               <Image
                 src={slide}
@@ -72,7 +105,7 @@ const GallerySlider = ({ cssClasses, data }: Props) => {
                 className="object-cover"
                 fill
                 loading={index < 3 ? "eager" : "lazy"}
-                sizes="(max-width: 800px) 100vw, (max-width: 1280px) 50vw, 420px"
+                sizes="(max-width: 800px) 100vw, (max-width: 1280px) 50vw, 500px"
               />
             </button>
           </SwiperSlide>
@@ -82,14 +115,14 @@ const GallerySlider = ({ cssClasses, data }: Props) => {
       {activeIndex !== null &&
         createPortal(
           <div
-            className="fixed inset-0 z-50 bg-black/90"
+            className="fixed inset-0 z-50 bg-black"
             onClick={() => setActiveIndex(null)}
           >
             <button
               type="button"
               aria-label="Close gallery"
               onClick={() => setActiveIndex(null)}
-              className="absolute right-4 top-4 z-10 desktop:hover:cursor-pointer"
+              className="absolute right-4 top-4 z-10 desktop:hover:cursor-pointer desktop:hover:scale-105 ease-in-out duration-300"
             >
               <X color="#ffffff" size={32} />
             </button>
@@ -100,7 +133,7 @@ const GallerySlider = ({ cssClasses, data }: Props) => {
                 event.stopPropagation();
                 lightboxSwiper.current?.slidePrev();
               }}
-              className="absolute left-2 top-1/2 z-10 hidden tablet:block -translate-y-1/2 desktop:left-20 min-[1440px]:left-40 min-[1640px]:left-60 desktop:hover:cursor-pointer"
+              className="absolute left-2 top-1/2 z-10 hidden min-[1000px]:block -translate-y-1/2 desktop:left-20 min-[1440px]:left-40 min-[1640px]:left-60 desktop:hover:cursor-pointer desktop:hover:scale-105 ease-in-out duration-300"
             >
               <ChevronLeft color="#ffffff" size={40} />
             </button>
@@ -111,7 +144,7 @@ const GallerySlider = ({ cssClasses, data }: Props) => {
                 event.stopPropagation();
                 lightboxSwiper.current?.slideNext();
               }}
-              className="absolute right-2 top-1/2 z-10 hidden tablet:block -translate-y-1/2 desktop:right-20 min-[1440px]:right-40 min-[1640px]:right-60 desktop:hover:cursor-pointer"
+              className="absolute right-2 top-1/2 z-10 hidden min-[1000px]:block -translate-y-1/2 desktop:right-20 min-[1440px]:right-40 min-[1640px]:right-60 desktop:hover:cursor-pointer desktop:hover:scale-105 ease-in-out duration-300"
             >
               <ChevronRight color="#ffffff" size={40} />
             </button>
@@ -149,7 +182,7 @@ const GallerySlider = ({ cssClasses, data }: Props) => {
           </div>,
           document.body,
         )}
-    </>
+    </div>
   );
 };
 

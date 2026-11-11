@@ -32,7 +32,7 @@ const ImageList = ({ images, cssClasses }: ImageListProps) => (
           src={image.src}
           alt={image.alt}
           fill
-          sizes="(max-width: 1280px) 100vw, 380px"
+          sizes="(max-width: 1280px) 100vw, 500px"
           className="object-cover"
         />
       </div>

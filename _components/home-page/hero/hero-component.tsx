@@ -15,7 +15,7 @@ export default function HeroComponent() {
           alt="Mountain Rose"
           fill
           priority
-          sizes="(max-width: 600px) 900px, 1280px"
+          sizes="(max-width: 600px) 900px, 1920px"
           className="object-cover"
         />
         <HeroBox cssClasses="relative" />
