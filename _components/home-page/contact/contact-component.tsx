@@ -111,7 +111,7 @@ export default function ContactComponent() {
                 +27 44 533 5981
               </Link>
               <p className="text-white opacity-85">
-                Noel Centre, Plettenberg Bay
+                Noël Centre, Plettenberg Bay
               </p>
             </div>
           </div>
